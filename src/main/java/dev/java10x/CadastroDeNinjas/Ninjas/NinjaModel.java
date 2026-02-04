@@ -1,6 +1,8 @@
-package dev.java10x.CadastroDeNinjas;
+package dev.java10x.CadastroDeNinjas.Ninjas;
 
+import dev.java10x.CadastroDeNinjas.Missoes.MissoesModel;
 import jakarta.persistence.*;
+import java.util.List;
 
 //Entity ele transforma uma classe em uma entidade do BD
 @Entity
@@ -13,6 +15,8 @@ public class NinjaModel {
     private String nome;
     private String email;
     private int idade;
+    private List<MissoesModel> missoes;
+
 
     //NoWards constructor
     public NinjaModel() {
